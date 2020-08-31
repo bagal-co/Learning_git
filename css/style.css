@@ -141,3 +141,7 @@ a{
   background-color: #ddd;
   padding: 2rem;
 }
+.about-content p:nth-of-type(2){
+  background-color: orangered;
+  color: #fff;
+}
