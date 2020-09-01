@@ -1,3 +1,11 @@
+:root{
+  --primary-color: #333;
+  --light-grey-color-1: #f0f4f7;
+  --green-color: #498138;
+  --light-sky: #4d89b1;
+  --footer-bg: #102d40;
+  --footer-color: #316076;
+}
 *{
   margin: 0;
   padding: 0;
@@ -7,8 +15,8 @@ html{
   font-size: 60.25%;
 }
 body{
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
   line-height: 1.5;
   font-size: 1.6rem;
 }
@@ -27,8 +35,7 @@ img{
 .header{
   height: 6rem;
   padding: 1rem 0;
-  background-color: #F0F4F7;
-  border-bottom: 1px solid #ccc;
+  background-color: var(--light-grey-color-1);
 }
 .logo{
   font-size: 3rem;
@@ -48,12 +55,14 @@ img{
 }
 .links{
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 500;
   padding: 0.75rem 0.90rem;
   color: #777;
   transition: color .4s ease;
 }
-.links:hover{
+.links:hover,
+.contact:hover,
+.sign-in:hover{
   color: #222;
 }
 .right-menu{
@@ -67,10 +76,6 @@ img{
   font-size: 1.4rem;
   transition: color .4s ease;
 }
-.contact:hover,
-.sign-in:hover{
-  color: #222;
-}
 .dwn{
   border: 1px solid #FF3E00;
   border-radius: 2px;
@@ -83,7 +88,7 @@ img{
 }
 .show-case{
   height: calc(100vh - 6rem);
-  background-image: linear-gradient(to right bottom, rgba(6, 49, 131, 0.8), rgba(52, 107, 42, 0.7)), url('../img/bg.jpeg');
+  background-image: linear-gradient(to right bottom, rgba(2, 34, 94, 0.8), rgba(1, 20, 36, 0.7)), url('../img/bg.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -100,7 +105,6 @@ img{
   margin-bottom: 1.75rem;
   font-size: 3.5rem;
   font-weight: 500;
-  font-family: 'Courier New', Courier, monospace;
 }
 .inner-showCase p{
   width: 80%;
@@ -143,10 +147,6 @@ img{
   grid-column-gap: 5rem;
   padding-bottom: 7.5rem;
 }
-
-/* .about-content div:first-child{
-  margin: 4rem;
-} */
 .about-content h2{
   padding-bottom: 1.5rem;
   font-weight: 600;
